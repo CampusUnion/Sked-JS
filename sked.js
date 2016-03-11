@@ -1,5 +1,5 @@
 /**
- *
+ * JS supplement to the Sked PHP calendar library.
  */
 (function($) {
 
