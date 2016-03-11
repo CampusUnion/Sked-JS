@@ -1,5 +1,7 @@
 /**
  * JS supplement to the Sked PHP calendar library.
+ *
+ * @see https://github.com/CampusUnion/Sked
  */
 (function($) {
 
