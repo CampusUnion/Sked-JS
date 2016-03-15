@@ -23,7 +23,8 @@ _require.config.js_
     },
     shim: {
         'sked': {
-            'deps': ['jquery']
+            deps: ['jquery'],
+            exports: 'skedJsLoaded'
         },
         // ...
     }
