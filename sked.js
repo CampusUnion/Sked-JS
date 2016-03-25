@@ -24,9 +24,12 @@
         $('.sked-form select[name="interval"]').change(function(){
             var bHide = ($(this).val() === '1' || $(this).val() === '');
             $('[name="weekdays[]"]').prop('disabled', bHide)
-                .parent(':not(form)')[bHide ? 'hide' : 'show']();
+                .parents('.sked-input-wrapper')[bHide ? 'hide' : 'show']();
         }).change();
 
     });
+
+    // Tell dependency loaders we're here.
+    window.skedJsLoaded = true;
 
 })(jQuery);
