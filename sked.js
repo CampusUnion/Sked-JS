@@ -29,7 +29,7 @@
 
     });
 
-    // Tell dependency loaders we're here.
-    window.skedJsLoaded = true;
-
 })(jQuery);
+
+// Tell dependency loaders we're here.
+window.skedJsLoaded = true;
