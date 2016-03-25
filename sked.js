@@ -8,7 +8,7 @@
     $(document).ready(function(){
 
         // Pluralize intervals (days, weeks, etc.) based on frequency
-        $('.sked-form select[name="frequency"]').change(function(){
+        $('.sked-form select[name="frequency"], .sked-form select[name="lead_time_num"]').change(function(){
             var bPlural = $(this).val() !== '1';
             var fnPluralString = function(){
                 var strText = $(this).text();
@@ -17,7 +17,7 @@
                 else if (!bPlural && strText.match('s$'))
                     $(this).text(strText.slice(0, -1));
             };
-            $('.sked-form select[name="interval"] option').each(fnPluralString);
+            $(this).siblings('select').children('option').each(fnPluralString);
         }).change();
 
         // Only show weekdays for weekly & monthly intervals
