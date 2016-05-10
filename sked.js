@@ -27,6 +27,14 @@
                 .parents('.sked-input-wrapper')[bHide ? 'hide' : 'show']();
         }).change();
 
+        // Toggle recurring-event fields based on
+        $('.sked-form input[name="repeats"]').change(function(){
+            if ($(this).is(':checked'))
+                $('.sked-input-recurring').show();
+            else
+                $('.sked-input-recurring').hide();
+        }).change();
+
     });
 
 })(jQuery);
