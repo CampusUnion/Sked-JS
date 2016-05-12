@@ -27,7 +27,7 @@
                 .parents('.sked-input-wrapper')[bHide ? 'hide' : 'show']();
         }).change();
 
-        // Toggle recurring-event fields based on
+        // Toggle recurring-event fields based on "repeats" checkbox
         $('.sked-form input[name="repeats"]').change(function(){
             if ($(this).is(':checked'))
                 $('.sked-input-recurring').show();
